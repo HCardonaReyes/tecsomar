@@ -104,659 +104,165 @@ public class UIManager : MonoBehaviour
     }
 
 
-
     private void ActivateMainMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        /*
-        turismoMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        turismoMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        turismoMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        turismoMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        turismoMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        leyendasMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        mapaMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mapaMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        comidaTipicaMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        comidaTipicaMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        comidaTipicaMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        imperdiblesMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        imperdiblesMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        imperdiblesMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        sabiasQueMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        sabiasQueMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        sabiasQueMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        productoTuristicoMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        productoTuristicoMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        productoTuristicoMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        informacionAdicionalMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        informacionAdicionalMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        informacionAdicionalMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        //Ui de la Realidad Aumentada
-        RATemploDeSantoDomingoCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RATemploDeSantoDomingoCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RATemploDeSantoDomingoCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAJardinZaragozaCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAJardinZaragozaCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAJardinZaragozaCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAHotelHidalgoCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAHotelHidalgoCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAHotelHidalgoCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAParroquiaDeSanJuanButistaCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAParroquiaDeSanJuanButistaCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAParroquiaDeSanJuanButistaCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAMuseoMunicipalCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAMuseoMunicipalCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAMuseoMunicipalCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAJardinConstitucionCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAJardinConstitucionCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAJardinConstitucionCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAPrecidenciaMunicipalCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAPrecidenciaMunicipalCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAPrecidenciaMunicipalCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAConjuntoArquitectonicoDeSanFranciscoCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAConjuntoArquitectonicoDeSanFranciscoCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAConjuntoArquitectonicoDeSanFranciscoCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAPlazuelaBelenMataCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAPlazuelaBelenMataCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAPlazuelaBelenMataCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAConjuntoArquitectonicoDeLaSoledadCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAConjuntoArquitectonicoDeLaSoledadCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAConjuntoArquitectonicoDeLaSoledadCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RACasaDeCulturaCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RACasaDeCulturaCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RACasaDeCulturaCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        //UI de scroll
-        FantasmaPuente.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-
-        CerroSombreretillo.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        CatrinaItinerante.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        */
-        DesactivateAll();
+        ActivarDesactivarMenu(mainMenuCanvas, true);
+        ActivarDesactivarMenu(turismoMenuCanvas, false);
+        ActivarDesactivarMenu(leyendasMenuCanvas, false);
+        ActivarDesactivarMenu(mapaMenuCanvas, false);
+        ActivarDesactivarMenu(comidaTipicaMenuCanvas, false);
+        ActivarDesactivarMenu(imperdiblesMenuCanvas, false);
+        ActivarDesactivarMenu(sabiasQueMenuCanvas, false);
+        ActivarDesactivarMenu(productoTuristicoMenuCanvas, false);
+        ActivarDesactivarMenu(informacionAdicionalMenuCanvas, false);
+        ActivarDesactivarMenu(FantasmaPuente, false);
+        ActivarDesactivarMenu(CerroSombreretillo, false);
+        ActivarDesactivarMenu(CatrinaItinerante, false);
     }
 
     private void DesactivateAll()
     {
-        turismoMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        turismoMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        turismoMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        turismoMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        turismoMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        leyendasMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        mapaMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mapaMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        comidaTipicaMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        comidaTipicaMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        comidaTipicaMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        imperdiblesMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        imperdiblesMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        imperdiblesMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        sabiasQueMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        sabiasQueMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        sabiasQueMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        productoTuristicoMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        productoTuristicoMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        productoTuristicoMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        informacionAdicionalMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        informacionAdicionalMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        informacionAdicionalMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        //Ui de la Realidad Aumentada
-        RATemploDeSantoDomingoCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RATemploDeSantoDomingoCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RATemploDeSantoDomingoCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAJardinZaragozaCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAJardinZaragozaCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAJardinZaragozaCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAHotelHidalgoCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAHotelHidalgoCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAHotelHidalgoCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAParroquiaDeSanJuanButistaCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAParroquiaDeSanJuanButistaCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAParroquiaDeSanJuanButistaCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAMuseoMunicipalCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAMuseoMunicipalCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAMuseoMunicipalCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAJardinConstitucionCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAJardinConstitucionCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAJardinConstitucionCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAPrecidenciaMunicipalCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAPrecidenciaMunicipalCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAPrecidenciaMunicipalCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAConjuntoArquitectonicoDeSanFranciscoCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAConjuntoArquitectonicoDeSanFranciscoCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAConjuntoArquitectonicoDeSanFranciscoCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAPlazuelaBelenMataCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAPlazuelaBelenMataCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAPlazuelaBelenMataCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAConjuntoArquitectonicoDeLaSoledadCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAConjuntoArquitectonicoDeLaSoledadCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RAConjuntoArquitectonicoDeLaSoledadCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RACasaDeCulturaCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RACasaDeCulturaCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        RACasaDeCulturaCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
+        ActivarDesactivarMenu(turismoMenuCanvas, false);
+        ActivarDesactivarMenu(leyendasMenuCanvas, false);
+        ActivarDesactivarMenu(mapaMenuCanvas, false);
+        ActivarDesactivarMenu(comidaTipicaMenuCanvas, false);
+        ActivarDesactivarMenu(imperdiblesMenuCanvas, false);
+        ActivarDesactivarMenu(sabiasQueMenuCanvas, false);
+        ActivarDesactivarMenu(productoTuristicoMenuCanvas, false);
+        ActivarDesactivarMenu(informacionAdicionalMenuCanvas, false);
         //UI de scroll
-        FantasmaPuente.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-
-        CerroSombreretillo.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        CatrinaItinerante.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
+        ActivarDesactivarMenu(FantasmaPuente, false);
+        ActivarDesactivarMenu(CerroSombreretillo, false);
+        ActivarDesactivarMenu(CatrinaItinerante, false);
     }
 
 
         private void ActivateProductoTuristicoMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        productoTuristicoMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        productoTuristicoMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        productoTuristicoMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(productoTuristicoMenuCanvas, true);
     }
 
     private void ActivateInformacionAdicionalMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        informacionAdicionalMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        informacionAdicionalMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        informacionAdicionalMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(informacionAdicionalMenuCanvas, true);
     }
 
     private void ActivateImperdiblesMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        imperdiblesMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        imperdiblesMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        imperdiblesMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(imperdiblesMenuCanvas, true);
 
     }
 
     private void ActivateComidaTipicaMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        comidaTipicaMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        comidaTipicaMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        comidaTipicaMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(comidaTipicaMenuCanvas, true);
     }
 
     private void ActivateSabiasQueMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        sabiasQueMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        sabiasQueMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        sabiasQueMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(sabiasQueMenuCanvas, true);
     }
 
     private void ActivateMapaMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        mapaMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        mapaMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(mapaMenuCanvas, true);
     }
 
     private void ActivateLeyendasMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        //Scrolls
-        FantasmaPuente.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        FantasmaPuente.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-
-        CerroSombreretillo.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CerroSombreretillo.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        CatrinaItinerante.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        CatrinaItinerante.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        leyendasMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        //Scrolls 
+        ActivarDesactivarMenu(FantasmaPuente, false);
+        ActivarDesactivarMenu(CerroSombreretillo, false);
+        ActivarDesactivarMenu(CatrinaItinerante, false);
+        ActivarDesactivarMenu(leyendasMenuCanvas, true);
     }
 
     private void ActivateTurismoMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        turismoMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        turismoMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        turismoMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        turismoMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        turismoMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(turismoMenuCanvas, true);
     }
 
     //Ui de la Realidad Aumentada
     private void ActivateRATemploDeSantoDomingo()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RATemploDeSantoDomingoCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RATemploDeSantoDomingoCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RATemploDeSantoDomingoCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, true);
     }
     private void ActivateRAJardinZaragoza()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAJardinZaragozaCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAJardinZaragozaCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAJardinZaragozaCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, true);
     }
     private void ActivateRAHotelHidalgo()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
 
-        RAHotelHidalgoCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAHotelHidalgoCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAHotelHidalgoCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
     }
     private void ActivateRAParroquiaDeSanJuanButista()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        RAParroquiaDeSanJuanButistaCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAParroquiaDeSanJuanButistaCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAParroquiaDeSanJuanButistaCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
 
     }
     private void ActivateRAMuseoMunicipal()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
 
-        RAMuseoMunicipalCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAMuseoMunicipalCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAMuseoMunicipalCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
     }
     private void ActivateRAJardinConstitucion()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
 
-        RAJardinConstitucionCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAJardinConstitucionCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAJardinConstitucionCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
     }
     private void ActivateRAPrecidenciaMunicipal()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
 
-        RAPrecidenciaMunicipalCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAPrecidenciaMunicipalCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAPrecidenciaMunicipalCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
     }
     private void ActivateRAConjuntoArquitectonicoDeSanFrancisco()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
 
-        RAConjuntoArquitectonicoDeSanFranciscoCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAConjuntoArquitectonicoDeSanFranciscoCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAConjuntoArquitectonicoDeSanFranciscoCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
     }
 
     private void ActivateRAPlazuelaBelenMata()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
 
-        RAPlazuelaBelenMataCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAPlazuelaBelenMataCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAPlazuelaBelenMataCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
     }
     private void ActivateAConjuntoArquitectonicoDeLaSoledad()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
 
-        RAConjuntoArquitectonicoDeLaSoledadCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAConjuntoArquitectonicoDeLaSoledadCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RAConjuntoArquitectonicoDeLaSoledadCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
     }
     private void ActivateRACasaDeCultura()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        mainMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
 
-        RACasaDeCulturaCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RACasaDeCulturaCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        RACasaDeCulturaCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
     }
 
     //Metodos del scroll
     private void ActivateFantasmaPuente()
     {
-        leyendasMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        FantasmaPuente.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        FantasmaPuente.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        FantasmaPuente.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        FantasmaPuente.transform.GetChild(3).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        FantasmaPuente.transform.GetChild(4).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        FantasmaPuente.transform.GetChild(5).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        FantasmaPuente.transform.GetChild(6).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(FantasmaPuente, true);
     }
 
     private void ActivateCerroSombreretillo()
     {
-        leyendasMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        CerroSombreretillo.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CerroSombreretillo.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CerroSombreretillo.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CerroSombreretillo.transform.GetChild(3).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CerroSombreretillo.transform.GetChild(4).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CerroSombreretillo.transform.GetChild(5).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(CerroSombreretillo, true);
     }
 
     private void ActivateCatrinaItinerante()
     {
-        leyendasMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(3).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        leyendasMenuCanvas.transform.GetChild(4).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(5).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(6).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(7).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-        //leyendasMenuCanvas.transform.GetChild(8).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
-
-        CatrinaItinerante.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CatrinaItinerante.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CatrinaItinerante.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CatrinaItinerante.transform.GetChild(3).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CatrinaItinerante.transform.GetChild(4).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CatrinaItinerante.transform.GetChild(5).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CatrinaItinerante.transform.GetChild(6).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CatrinaItinerante.transform.GetChild(7).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        CatrinaItinerante.transform.GetChild(8).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(CatrinaItinerante, true);
     }
 
     private void ActivateUIRA(string txt)
     {
+        ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(CatrinaItinerante, true);
+
         DesactivateAll();
         UIRA.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
         UIRA.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
@@ -765,7 +271,23 @@ public class UIManager : MonoBehaviour
     }
 
 
+    private void ActivarDesactivarMenu(GameObject menu, bool activarDesactivar)
+    {
+        for (int i = 0; i < menu.transform.childCount; i++)
+        {
+            Transform child = menu.transform.GetChild(i);
+            if (activarDesactivar == true)
+            {
+                child.transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+            }
+            else
+            {
+                child.transform.DOScale(new Vector3(0, 0, 0), 0.5f);
+            }
+        }
 
+        Debug.Log(menu.name + " " + menu.transform.childCount + " " + activarDesactivar.ToString());
+    }
 
 
 }
