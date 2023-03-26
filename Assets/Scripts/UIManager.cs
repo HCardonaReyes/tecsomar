@@ -286,7 +286,7 @@ public class UIManager : MonoBehaviour
             }
         }
 
-        Debug.Log(menu.name + " " + menu.transform.childCount + " " + activarDesactivar.ToString());
+        Debug.Log(menu.name + "-" + menu.transform.childCount + "-" + activarDesactivar.ToString());
     }
 
 
