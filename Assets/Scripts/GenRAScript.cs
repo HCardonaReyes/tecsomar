@@ -7,8 +7,8 @@ public class GenRAScript : MonoBehaviour
 {
     [SerializeField]
     private GameObject ga;
-    //[SerializeField]
-    //private TextMeshProUGUI textMeshProUGUI;
+    [SerializeField]
+    private AudioClip ac;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +21,13 @@ public class GenRAScript : MonoBehaviour
 
     }
 
-    public void setTitulo(string texto) {
+    public void setTextoClip(string texto, AudioClip ac) {
         TextMeshProUGUI textMeshProUGUI = ga.GetComponent<TextMeshProUGUI>();
         textMeshProUGUI.text = texto;
     }
+
+
+
 
 
 }

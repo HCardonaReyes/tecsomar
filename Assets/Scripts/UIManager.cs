@@ -258,7 +258,7 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(CatrinaItinerante, true);
     }
 
-    private void ActivateUIRA(string txt)
+    private void ActivateUIRA(string txt, AudioClip audioClip)
     {
         ActivarDesactivarMenu(mainMenuCanvas, false);
         ActivarDesactivarMenu(CatrinaItinerante, true);

@@ -474,9 +474,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 429103053}
+      - m_Target: {fileID: 429103052}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: UIRA
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14290,6 +14290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ga: {fileID: 277849617}
+  ac: {fileID: 0}
 --- !u!1 &829808694
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     public event Action OnCatrinaItinerante;
 
     //UI de RA 
-    public event Action<string> OnUIRA;
+    public event Action<string, AudioClip> OnUIRA;
 
     public static GameManager instance;
 
@@ -189,9 +189,9 @@ public class GameManager : MonoBehaviour
     }
 
     //Ui de RA
-    public void UIRA(string texto)
+    public void UIRA(string texto, AudioClip audioClip)
     {
-        OnUIRA?.Invoke(texto);
+        OnUIRA?.Invoke(texto, audioClip);
         Debug.Log("UIRA menu activado");
     }
 
