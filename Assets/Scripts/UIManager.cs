@@ -118,6 +118,7 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(FantasmaPuente, false);
         ActivarDesactivarMenu(CerroSombreretillo, false);
         ActivarDesactivarMenu(CatrinaItinerante, false);
+        ActivarDesactivarMenu(UIRA, false);
     }
 
     private void DesactivateAll()
@@ -134,6 +135,7 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(FantasmaPuente, false);
         ActivarDesactivarMenu(CerroSombreretillo, false);
         ActivarDesactivarMenu(CatrinaItinerante, false);
+        ActivarDesactivarMenu(UIRA, false);
     }
 
 
@@ -181,6 +183,7 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(FantasmaPuente, false);
         ActivarDesactivarMenu(CerroSombreretillo, false);
         ActivarDesactivarMenu(CatrinaItinerante, false);
+        ActivarDesactivarMenu(UIRA, false);
         ActivarDesactivarMenu(leyendasMenuCanvas, true);
     }
 
@@ -258,7 +261,7 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(CatrinaItinerante, true);
     }
 
-    private void ActivateUIRA(string txt, AudioClip audioClip)
+    private void ActivateUIRA()
     {
         ActivarDesactivarMenu(mainMenuCanvas, false);
         ActivarDesactivarMenu(CatrinaItinerante, true);
@@ -267,7 +270,7 @@ public class UIManager : MonoBehaviour
         UIRA.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
         UIRA.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
         UIRA.transform.GetChild(2).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-        UIRA.GetComponentInChildren<GenRAScript>().setTitulo(txt);
+        //UIRA.GetComponentInChildren<GenRAScript>().setTitulo(txt);
     }
 
 
